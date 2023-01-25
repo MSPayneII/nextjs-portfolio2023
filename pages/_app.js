@@ -13,6 +13,7 @@ import "../styles/resume.css";
 import "../styles/contact-page.css";
 import "../styles/collaborate.css";
 import "../styles/footer.css";
+import "../styles/notification.css";
 
 function MyApp({ Component, pageProps }) {
   return (

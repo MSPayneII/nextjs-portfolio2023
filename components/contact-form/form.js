@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BiErrorAlt } from "react-icons/bi";
 import { useForm } from "react-hook-form";
+import Notification from "../ui/notification";
 
 import emailjs from "@emailjs/browser";
 
@@ -11,10 +12,26 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
+  const [requestStatus, setRequestStatus] = useState();
+  const [requestError, setRequestError] = useState();
+
   const form = useRef();
 
+  useEffect(() => {
+    if (requestStatus === "success" || requestStatus === "error") {
+      const timer = setTimeout(() => {
+        setRequestStatus(null);
+        setRequestError(null);
+      }, 3000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [requestStatus]);
+
   const onSubmit = (data, e) => {
-    console.log(data);
+    setRequestStatus("pending");
 
     emailjs
       .sendForm(
@@ -25,22 +42,47 @@ const Form = () => {
       )
       .then(
         (result) => {
+          setRequestStatus("success");
+
           console.log(result.text);
         },
         (error) => {
+          setRequestError(error.message);
+          setRequestStatus("error");
+
           console.log(error.text);
         }
       );
 
     e.target.reset(); // reset after form submit
   };
+
+  let notification;
+
+  if (requestStatus === "pending") {
+    notification = {
+      status: "pending",
+      title: "Sending message",
+      message: "Your message is on its way!",
+    };
+  }
+
+  if (requestStatus === "success") {
+    notification = {
+      status: "success",
+      title: "Success!",
+      message: "Message sent successfully!",
+    };
+  }
+  if (requestStatus === "error") {
+    notification = {
+      status: "error",
+      title: "Error!",
+      message: requestError,
+    };
+  }
   return (
-    <form
-      action=""
-      className="form"
-      onSubmit={handleSubmit(onSubmit)}
-      ref={form}
-    >
+    <form className="form" onSubmit={handleSubmit(onSubmit)} ref={form}>
       <fieldset>
         <legend className="form-legend">Contact Form</legend>
         <label htmlFor="name" className="form-label">
@@ -119,6 +161,14 @@ const Form = () => {
 
         <input type="submit" className="form-submit-btn action-btn" />
       </fieldset>
+
+      {notification && (
+        <Notification
+          status={notification.status}
+          title={notification.title}
+          message={notification.message}
+        />
+      )}
     </form>
   );
 };
