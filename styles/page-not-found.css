@@ -1,0 +1,14 @@
+.page-not-found-text {
+  margin: 7rem 0;
+  text-align: center;
+}
+
+.page-not-found-text .primary-secondary-header {
+  margin-bottom: 3rem;
+}
+
+.page-not-found-img {
+  width: 40%;
+  height: auto;
+  margin-bottom: 5rem;
+}

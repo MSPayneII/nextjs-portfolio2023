@@ -1,0 +1,44 @@
+.about-me {
+  margin-bottom: 4.875rem;
+}
+
+.about-me-title {
+  margin-bottom: 2.625rem;
+}
+
+.about-me .polaroid,
+.about-me-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    margin-bottom: 8.3125rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me {
+    margin-bottom: 13.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+  }
+
+  .about-me .polaroid {
+    display: block;
+    grid-column: 1;
+    padding: 1rem 1rem 5rem 1rem;
+    width: 24.875rem;
+    height: 25rem;
+  }
+
+  .about-me-text {
+    align-self: center;
+  }
+  .about-me-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

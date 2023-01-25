@@ -1,0 +1,199 @@
+/*
+=============== 
+Socials section
+===============
+*/
+
+.social-media {
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.socials-body {
+  margin-bottom: 2.5rem;
+}
+.social-media .primary-secondary-header {
+  margin-bottom: 2.375rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  font-size: var(--ft-heading-2);
+}
+
+.external-social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  font-size: var(--ft-standard);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.125rem;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--clr-grayish-dark-blue);
+  transition: var(--transition2);
+  cursor: pointer;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.external-social-link:hover {
+  background-color: var(--clr-grayish-dark-blue);
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 650px) {
+  .socials {
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socials-body {
+    max-width: 40.0625rem;
+  }
+  .social-icon {
+    font-size: var(--ft-heading-3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .social-media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-media .primary-secondary-header {
+    grid-column: 1;
+  }
+  .socials-body {
+    grid-column: 2;
+    width: 36.6875rem;
+  }
+
+  .socials,
+  .contact-me .divider-line {
+    grid-column: 1 / span end;
+  }
+
+  .external-social-link {
+    padding: 0.5rem 1rem;
+    /* width: 10rem; */
+  }
+
+  .socials {
+    grid-column: 2;
+    margin-bottom: 2.9375rem;
+  }
+}
+
+/*
+=============== 
+Contact section
+===============
+*/
+
+.contact-me {
+  display: grid;
+  margin-bottom: 5rem;
+}
+
+.contact-me .primary-secondary-header {
+  margin-bottom: 2.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-me {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-me {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4rem;
+  }
+}
+
+.form {
+  margin-bottom: 4rem;
+}
+
+.form-submit-btn {
+  font-size: var(--ft-body);
+  border-color: transparent;
+  width: 12.5rem;
+  padding: 1rem 2rem;
+}
+
+.form-legend {
+  font-size: var(--ft-body);
+  line-height: var(--lh-h3-body);
+  margin-bottom: 0.5rem;
+  visibility: hidden;
+}
+
+.form-label {
+  color: var(--clr-grayish-dark-blue);
+  font-size: var(--ft-body);
+  line-height: var(--lh-h3-body);
+  font-weight: var(--fw-medium);
+}
+
+.error-icon {
+  font-size: var(--ft-heading-4);
+  line-height: var(--lh-h4);
+
+  margin-right: 0.5rem;
+}
+
+.form-error-msg {
+  display: flex;
+  align-items: center;
+  color: var(--clr-red);
+  font-size: var(--ft-standard);
+  font-weight: var(--fw-bold);
+  margin-top: 0.5rem;
+}
+
+.form-input-field {
+  display: block;
+  color: var(--clr-grayish-dark-blue);
+  background-color: var(--clr-light-grey);
+  font-size: var(--ft-body);
+  font-weight: var(--fw-medium);
+  width: 95%;
+  height: 3rem;
+  padding-left: 1rem;
+  border: none;
+  margin-bottom: 2.125rem;
+  margin-top: 0.5rem;
+}
+
+.form-input-field[placeholder] {
+  font-weight: var(--fw-medium);
+}
+
+.form-input-message {
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    margin-bottom: 4.5rem;
+  }
+  .form-legend {
+    width: 36.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+}
