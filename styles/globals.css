@@ -40,6 +40,7 @@
   /* miscellaneous */
   --fixed-width: 32.5rem; /* 520px */
   --max-width: 62.8125rem; /* 1005px */
+  --border: #33323d;
   --shadow1: 0 5px 15px rgba(0, 0, 0, 0.1);
   --shadow2: 0 5px 15px rgba(0, 0, 0, 0.2);
   --transition1: all 0.1s linear;
