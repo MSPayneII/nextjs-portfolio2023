@@ -13,7 +13,11 @@ const ListItem = ({ id, img, title, client, tech, desc }) => {
 
   return (
     <article className="list-item" key={id}>
-      <img src={img} alt={title} className="list-item-img" />
+      <img
+        src={img}
+        alt={`${title} project preview`}
+        className="list-item-img"
+      />
 
       <div className="list-item-text">
         <div className="divider-line"></div>

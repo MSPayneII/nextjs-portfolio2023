@@ -85,7 +85,7 @@ const Form = () => {
     <form className="form" onSubmit={handleSubmit(onSubmit)} ref={form}>
       <fieldset>
         <legend className="form-legend">Contact Form</legend>
-        <label htmlFor="name" className="form-label">
+        <label htmlFor="first-name" className="form-label">
           First name (required)
           {errors.firstName && (
             <div className="form-error-msg">
@@ -102,7 +102,7 @@ const Form = () => {
           aria-label="first name text field"
           {...register("firstName", { required: true })}
         />
-        <label htmlFor="name" className="form-label">
+        <label htmlFor="last-name" className="form-label">
           Last name (required)
           {errors.lastName && (
             <div className="form-error-msg">
@@ -159,7 +159,11 @@ const Form = () => {
           {...register("message", { required: true })}
         />
 
-        <input type="submit" className="form-submit-btn action-btn" />
+        <input
+          type="submit"
+          className="form-submit-btn action-btn"
+          value="Submit"
+        />
       </fieldset>
 
       {notification && (

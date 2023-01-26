@@ -40,7 +40,7 @@ const MainNavigation = () => {
         <div className="nav-header">
           <Image
             src={screenSize > 1024 ? BigLogo : SmallLogo}
-            alt="Michael S. Payne II"
+            alt="Michael S. Payne II - Personal Portfolio"
           />
           <button className="action-btn nav-toggle" onClick={openMenu}>
             Menu <AiOutlineMenu className="menu-icon" />

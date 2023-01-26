@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="footer-center">
         <Image
           src={screenSize > 1024 ? BigLogo : SmallLogo}
-          alt="Michael S. Payne II"
+          alt="Michael S. Payne II Logo"
         />
         <button className="back-top-link" onClick={scrollBackToTop}>
           Back to top
