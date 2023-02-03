@@ -7,17 +7,17 @@ import { findProject } from "../../helpers/helpers";
 import SEO from "../../components/seo/seo";
 
 const EightBallFortune = (props) => {
-  const { title, client, tech, classification, site, github, tldr, features } =
-    props.project;
-
-  const tabletPreviewList = [
-    "/assets/eightball-fortune/tablet-preview1.png",
-    "/assets/eightball-fortune/tablet-preview2.png",
-    "/assets/eightBall-fortune/tablet-preview3.png",
-    "/assets/eightBall-fortune/tablet-preview4.png",
-    "/assets/eightBall-fortune/tablet-preview5.png",
-    "/assets/eightBall-fortune/tablet-preview6.png",
-  ];
+  const {
+    title,
+    client,
+    tech,
+    classification,
+    site,
+    github,
+    tldr,
+    features,
+    tabletImages,
+  } = props.project;
 
   return (
     <>
@@ -77,7 +77,7 @@ const EightBallFortune = (props) => {
         <section className="full-screen">
           <h2 className="tertiary-header">Tablet preview</h2>
           <div className="content-section-preview">
-            {tabletPreviewList.map((image, index) => {
+            {tabletImages.map((image, index) => {
               return (
                 <img
                   src={image}

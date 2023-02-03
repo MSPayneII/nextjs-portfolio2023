@@ -128,6 +128,14 @@ export const devProjects = [
         "Session logout functionality",
       ],
     },
+    tabletImages: [
+      "/assets/eightball-fortune/tablet-preview1.png",
+      "/assets/eightball-fortune/tablet-preview2.png",
+      "/assets/eightBall-fortune/tablet-preview3.png",
+      "/assets/eightBall-fortune/tablet-preview4.png",
+      "/assets/eightBall-fortune/tablet-preview5.png",
+      "/assets/eightBall-fortune/tablet-preview6.png",
+    ],
   },
   {
     id: 5,
