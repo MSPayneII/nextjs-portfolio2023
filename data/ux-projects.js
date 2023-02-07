@@ -223,6 +223,153 @@ export const uxProjects = [
   },
   {
     id: 3,
+    title: "Food Route Design",
+    classification: "User research",
+    client: "Adobe Design Challenge",
+    img: "/assets/ux-project-thumbnails/food-route-thumb.png",
+    slug: "/food-route",
+    time: "2 Weeks (Sep 25th - Oct 12 2020)",
+    role: "Team leader, logo designer, created/compiled most checkpoint deliverables, designed request support flow",
+    team: "3",
+    skills:
+      "Moodboard creation, Persona creation, Wireframes,Visual design, High-Fi prototyping",
+    desc: "A prototype community-based platform for individuals to receive and give assistance to one another",
+    tldr: {
+      header: "TLDR",
+      body: "As part of an two-week Adobe Design Challenge, this app aims to provide an intuitive community-based platform for individuals unable to go grocery shopping and to receive assistance by arranging for other users to make grocery store runs on their behalf. The purpose is to allow people in the high-risk category for Covid-19 to obtain groceries with less risk by having others do it for them. ",
+    },
+    problem: {
+      header: "Problem",
+      body: "Food insecurity is an issue in Detroit, Michigan. The public transportation system is notoriously faulty, and the number of unhealthy food options far exceeds the number of healthy ones. The pandemic’s impact has exacerbated the situation further by making routine trips to the grocery store a life-threatening endeavor for individuals classified in the “high-risk” demographic group (e.g., elderly, immunocompromised) for COVID-19.",
+    },
+    tool: {
+      header: "A Solution",
+      body: "Food Route: a mobile application that provides an intuitive community-based platform for individuals to give and/or receive assistance to one another in the era of COVID-19. Food Route focuses on two groups of individuals that can switch roles at any time of their choosing: ",
+      list: [
+        "Volunteers - those that can offer assistance in one or more of the following: Food donation, the offering of rides to the grocery store, and picking up groceries for vulnerable individuals that cannot venture out during the pandemic",
+        "Recipients - those that require assistance making trips to/purchasing items from the grocery store safely.",
+      ],
+    },
+
+    features: {
+      header: "Main Features",
+      list: [
+        "The ability to request assistance - recipients can post requests for rides to the grocery store, for volunteers to pick up groceries on their behalf, or for food donations",
+        "The ability to offer assistance - volunteers can post available times",
+        " Maximize Resources - a hub for information on maximizing the usage of limited food resources",
+        "Community Offerings - a feed that showcases user postings of where to find food, which can be from a local food pantry or a recipient’s donation of cooked or non-perishable food",
+      ],
+    },
+    moodBoard: {
+      header: "Moodboard",
+      image: "/assets/food-route/moodboard.png",
+      alt: "A collage of images that inspired the project",
+    },
+    persona1: {
+      header: "Persona 1: Sheila",
+      body: "Represents a user in need of assistance (e.g., someone to pick up groceries from the store)",
+      image: "/assets/food-route/persona1.png",
+      alt: "Sheila persona",
+    },
+    persona2: {
+      header: "Persona 2: Paul",
+      body: "Represents a user that can provide assistance with food donation",
+      image: "/assets/food-route/persona2.png",
+      alt: "Paul persona",
+    },
+    persona3: {
+      header: "Persona 3: Johnathan",
+      body: "Represents a user that can provide assistance (e.g., giving rides to the grocery store)",
+      image: "/assets/food-route/persona3.png",
+      alt: "Johnathan persona",
+    },
+    diagram: {
+      header: "Application Flow",
+      image: "/assets/food-route/flow-diagram.png",
+      alt: "Food Route application user flow diagram",
+    },
+    styleGuide: {
+      header: "Style guide",
+      list: [
+        {
+          image: "/assets/food-route/style-guide1.png",
+          alt: "Food Route color palette and typography",
+        },
+        {
+          image: "/assets/food-route/style-guide2.png",
+          alt: "Food Route elements, icons, images ",
+        },
+      ],
+    },
+    mobilePreview: {
+      header: "A few screenshots of the application",
+      list: [
+        {
+          image: "/assets/food-route/onboarding1.png",
+          alt: "Onboarding screen 1",
+        },
+        {
+          image: "/assets/food-route/onboarding2.png",
+          alt: "Onboarding screen 2",
+        },
+        {
+          image: "/assets/food-route/onboarding3.png",
+          alt: "Onboarding screen 3",
+        },
+        {
+          image: "/assets/food-route/onboarding4.png",
+          alt: "Onboarding screen 4",
+        },
+        {
+          image: "/assets/food-route/onboarding5.png",
+          alt: "Onboarding screen 5",
+        },
+        {
+          image: "/assets/food-route/onboarding6.png",
+          alt: "Onboarding screen 6",
+        },
+        {
+          image: "/assets/food-route/volunteerscreen1.png",
+          alt: "Volunteer screen 1",
+        },
+        {
+          image: "/assets/food-route/volunteerscreen2.png",
+          alt: "Volunteer screen 2",
+        },
+        {
+          image: "/assets/food-route/volunteerscreen3.png",
+          alt: "Volunteer screen 3",
+        },
+        {
+          image: "/assets/food-route/volunteerscreen4.png",
+          alt: "Volunteer screen 4",
+        },
+        {
+          image: "/assets/food-route/recipientscreen1.png",
+          alt: "Recipient screen 1",
+        },
+        {
+          image: "/assets/food-route/recipientscreen2.png",
+          alt: "Recipient screen 2",
+        },
+        {
+          image: "/assets/food-route/recipientscreen3.png",
+          alt: "Volunteer screen 3",
+        },
+        {
+          image: "/assets/food-route/recipientscreen4.png",
+          alt: "Volunteer screen 4",
+        },
+        {
+          image: "/assets/food-route/recipientscreen5.png",
+          alt: "Volunteer screen 5",
+        },
+      ],
+    },
+  },
+
+  {
+    id: 4,
     title: "Audience Expansion",
     classification: "ux",
     client: "Journeys International",
@@ -295,7 +442,7 @@ export const uxProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Website Comparison",
     classification: "ux",
     client: "Tobii",
