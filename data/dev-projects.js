@@ -74,9 +74,28 @@ export const devProjects = [
       body: "Building with vanilla JS was a fun challenge that took a lot of mental gymnastics for the cart functionality, specifically ensuring that the UI was always in sync with the data by updating and retrieving information every time a product was added, edited, or removed from the cart. ",
     },
   },
-
   {
     id: 3,
+    title: "Multi-step form",
+    classification: "Web development",
+    tech: ["Next, ", "React, ", "CSS"],
+    img: "/assets/dev-project-thumbnails/multi-step-form-thumb.png",
+    slug: "/",
+    site: "/",
+    github: "/",
+    desc: "Coming soon!",
+    tldr: {
+      header: "",
+      body: "",
+    },
+    features: {
+      header: "MVP features",
+      featureList: [],
+    },
+  },
+
+  {
+    id: 4,
     title: "Todo App",
     classification: "Web development",
     tech: ["HTML, ", "CSS, ", "React "],
@@ -101,7 +120,7 @@ export const devProjects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "8-Ball Fortune Teller",
     classification: "Web development",
     tech: "M.E.R.N stack",
@@ -138,7 +157,7 @@ export const devProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Digital Office Space",
     classification: "Web development",
     client: "Chadsey Condon (CCCO)",
