@@ -49,8 +49,6 @@ const Form = () => {
         (error) => {
           setRequestError(error.message);
           setRequestStatus("error");
-
-          console.log(error.text);
         }
       );
 
