@@ -29,7 +29,7 @@ const Audiophile = (props) => {
       />
       <div className="main-project-img-container">
         <img
-          src="/assets/Audiophile/audiophile-main.png"
+          src="/assets/audiophile/audiophile-main.png"
           alt="Project Landing Page"
           className="project-img"
         />
