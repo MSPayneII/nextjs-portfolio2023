@@ -55,7 +55,7 @@ const Audiophile = (props) => {
           <p className="pos-margin-bottom-4">{cart.body}</p>
           <figure className="project-img-container pos-margin-bottom-4">
             <img
-              src="/assets/Audiophile/audiophile-cart.gif"
+              src="/assets/audiophile/audiophile-cart.gif"
               alt="Checkout functionality display"
               className="project-img"
             />
